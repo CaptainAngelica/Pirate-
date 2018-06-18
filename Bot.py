@@ -8,12 +8,12 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('!hello'):
+    if message.content.startswith('<hello'):
         msg = 'Hello {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg)
-    if message.content.startswith('!how are you'):
+    if message.content.startswith('<how are you'):
         await client.send_message(message.channel, "i am fine wbu")
-    if message.content.startswith('!ty for asking'):
+    if message.content.startswith('<ty for asking'):
         await client.send_message(message.channel, "yw")
 
 @client.event
@@ -23,4 +23,4 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-client.run('NDU2ODgxODE5MDQ5MDAwOTgw.DggfJQ.ZcAbLvq4W42cHvqomgKKc6FuXAc')
+client.run('BotToken')
