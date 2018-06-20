@@ -23,4 +23,4 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-client.run('NDU2ODgxODE5MDQ5MDAwOTgw.DggfJQ.ZcAbLvq4W42cHvqomgKKc6FuXAc')
+client.run('BOT_Token')
